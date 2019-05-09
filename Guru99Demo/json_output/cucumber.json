@@ -86,7 +86,7 @@
         "steps": [
           {
             "result": {
-              "duration": 232254231,
+              "duration": 15649137870,
               "status": "passed"
             },
             "line": 25,
@@ -98,9 +98,8 @@
           },
           {
             "result": {
-              "duration": 464667045,
-              "error_message": "java.lang.NullPointerException\r\n\tat java.util.Objects.requireNonNull(Objects.java:203)\r\n\tat org.openqa.selenium.interactions.Actions.\u003cinit\u003e(Actions.java:65)\r\n\tat com.guru99.pages.Homepage.seleniumHoverClick(Homepage.java:26)\r\n\tat com.guru99.stepdef.HomePageStep.user_hovers_on_selenium_and_clicks_on_selenium_lable(HomePageStep.java:20)\r\n\tat ✽.Then User hovers on selenium and clicks on selenium lable(guru99.feature:26)\r\n",
-              "status": "failed"
+              "duration": 1846278681,
+              "status": "passed"
             },
             "line": 26,
             "name": "User hovers on selenium and clicks on selenium lable",
@@ -111,20 +110,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 7800435,
+              "status": "passed"
             },
             "line": 27,
-            "name": "user clicks on radio and checkbox",
-            "match": {
-              "location": "HomePageStep.user_clicks_on_radio_and_checkbox()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 28,
             "name": "user verifies the page",
             "match": {
               "location": "HomePageStep.user_verifies_the_page()"
@@ -133,12 +122,13 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 226816369,
+              "status": "passed"
             },
-            "line": 29,
+            "line": 28,
             "name": "user selects second radio button and third checkbox",
             "match": {
-              "location": "HomePageStep.user_selects_second_radio_button_and_third_checkbox(int)"
+              "location": "HomePageStep.user_selects_second_radio_button_and_third_checkbox()"
             },
             "keyword": "Then "
           }

@@ -8,11 +8,18 @@ public class TestUtil {
 	
 	static long PAGE_LOADLTIMEOUT = 20;
 	static long IMPLICIT_WAIT = 30;	
+	
 	public static void highLightElement(WebDriver driver, WebElement element)
 	{
+		
+		try {
+			
 	JavascriptExecutor js=(JavascriptExecutor)driver; 
 	 
 	js.executeScript("arguments[0].setAttribute('style', 'border: 2px solid red;');", element);
-	
+		}
+		catch (Exception e) {
+			System.out.println(e);
+		}
 	}
 }

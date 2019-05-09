@@ -23,7 +23,9 @@ Feature: Guru99 Automation
   @Sanity
   Scenario: Page Validation
     Given User is at home page
-    Then User hovers on selenium and clicks on selenium lable
- 		Then user clicks on radio and checkbox 
+    Then User hovers on selenium and clicks on selenium lable 
  		Then user verifies the page 
  		Then user selects second radio button and third checkbox
+
+ 		
+ 		

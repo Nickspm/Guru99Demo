@@ -112,16 +112,11 @@ formatter.step({
 });
 formatter.step({
   "line": 27,
-  "name": "user clicks on radio and checkbox",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 28,
   "name": "user verifies the page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 29,
+  "line": 28,
   "name": "user selects second radio button and third checkbox",
   "keyword": "Then "
 });
@@ -129,33 +124,28 @@ formatter.match({
   "location": "HomePageStep.user_is_at_home_page()"
 });
 formatter.result({
-  "duration": 232254231,
+  "duration": 15649137870,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageStep.user_hovers_on_selenium_and_clicks_on_selenium_lable()"
 });
 formatter.result({
-  "duration": 464667045,
-  "error_message": "java.lang.NullPointerException\r\n\tat java.util.Objects.requireNonNull(Objects.java:203)\r\n\tat org.openqa.selenium.interactions.Actions.\u003cinit\u003e(Actions.java:65)\r\n\tat com.guru99.pages.Homepage.seleniumHoverClick(Homepage.java:26)\r\n\tat com.guru99.stepdef.HomePageStep.user_hovers_on_selenium_and_clicks_on_selenium_lable(HomePageStep.java:20)\r\n\tat ✽.Then User hovers on selenium and clicks on selenium lable(guru99.feature:26)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "HomePageStep.user_clicks_on_radio_and_checkbox()"
-});
-formatter.result({
-  "status": "skipped"
+  "duration": 1846278681,
+  "status": "passed"
 });
 formatter.match({
   "location": "HomePageStep.user_verifies_the_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 7800435,
+  "status": "passed"
 });
 formatter.match({
-  "location": "HomePageStep.user_selects_second_radio_button_and_third_checkbox(int)"
+  "location": "HomePageStep.user_selects_second_radio_button_and_third_checkbox()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 226816369,
+  "status": "passed"
 });
 });

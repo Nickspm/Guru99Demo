@@ -17,7 +17,7 @@ public class BasePage extends TestUtil{
 	public BasePage() {
 		try {
 			prop =new Properties();
-			FileInputStream fis = new FileInputStream("C:\\Users\\prannoy.m\\eclipse-workspace\\Guru99Demo\\src\\main\\java\\com\\guru99\\config\\config.properties");
+			FileInputStream fis = new FileInputStream("C:\\panay\\Guru99Demo\\Guru99Demo\\src\\main\\java\\com\\guru99\\config\\config.properties");
 			prop.load(fis);
 		}
 		catch(IOException e ){
@@ -25,11 +25,12 @@ public class BasePage extends TestUtil{
 		}
 	}
 
-	public static void initialization() {
+	public static void initialization() throws InterruptedException {
 		String browserName = prop.getProperty("browser");
 		if(browserName.equals("Chrome")) {
-			System.setProperty("webdriver.chrome.driver", "./Guru99Demo/Drivers/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\panay\\Guru99Demo\\Guru99Demo\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
+			
 		}
 		else if(browserName.equals("FF")) {
 			System.setProperty("webdriver.gecko.driver", "./Guru99Demo/Drivers/geckodriver.exe");
@@ -40,6 +41,7 @@ public class BasePage extends TestUtil{
 	    driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOADLTIMEOUT, TimeUnit.SECONDS);
 	    //pageLoadTimeout((TestUtil.PAGE_LOADLTIMEOUT),TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
+		Thread.sleep(5000);
 
 
 }
