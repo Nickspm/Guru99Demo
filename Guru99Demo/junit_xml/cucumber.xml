@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.696921">
+<testcase classname="Guru99 Automation" name="Page Validation" time="0.696921">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at java.util.Objects.requireNonNull(Objects.java:203)&#13;&#10;&#9;at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:65)&#13;&#10;&#9;at com.guru99.pages.Homepage.seleniumHoverClick(Homepage.java:26)&#13;&#10;&#9;at com.guru99.stepdef.HomePageStep.user_hovers_on_selenium_and_clicks_on_selenium_lable(HomePageStep.java:20)&#13;&#10;&#9;at ✽.Then User hovers on selenium and clicks on selenium lable(guru99.feature:26)&#13;&#10;"><![CDATA[Given User is at home page..................................................passed
+Then User hovers on selenium and clicks on selenium lable...................failed
+Then user clicks on radio and checkbox......................................skipped
+Then user verifies the page.................................................skipped
+Then user selects second radio button and third checkbox....................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at java.util.Objects.requireNonNull(Objects.java:203)
+	at org.openqa.selenium.interactions.Actions.<init>(Actions.java:65)
+	at com.guru99.pages.Homepage.seleniumHoverClick(Homepage.java:26)
+	at com.guru99.stepdef.HomePageStep.user_hovers_on_selenium_and_clicks_on_selenium_lable(HomePageStep.java:20)
+	at ✽.Then User hovers on selenium and clicks on selenium lable(guru99.feature:26)
+]]></failure>
+</testcase>
+</testsuite>
